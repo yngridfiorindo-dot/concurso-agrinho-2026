@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - AgroFácil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AgroFácil: Futuro Sustentável</h1>
+        <p>Equilíbrio entre produção e meio ambiente - Concurso Agrinho 2026</p>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Sua propriedade é sustentável?</h2>
+            <p>Responda às perguntas abaixo para avaliar o equilíbrio ambiental da sua produção agrícola.</p>
+        </section>
+
+        <section class="quiz-box">
+            <div class="question">
+                <label for="agua">1. Como é feita a gestão da água na irrigação?</label>
+                <select id="agua">
+                    <option value="1">Uso sem controle/Irrigação por inundação</option>
+                    <option value="2">Irrigação por aspersão convencional</option>
+                    <option value="3">Gotejamento ou uso de sensores de umidade (Eficiente)</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="solo">2. Qual técnica de manejo do solo é utilizada?</label>
+                <select id="solo">
+                    <option value="1">Arado convencional sem rotação de culturas</option>
+                    <option value="2">Rotação de culturas básica</option>
+                    <option value="3">Plantio Direto e rotação de culturas complexa</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="energia">3. Qual a principal fonte de energia da propriedade?</label>
+                <select id="energia">
+                    <option value="1">Apenas rede elétrica convencional / Diesel</option>
+                    <option value="2">Uso parcial de biocombustíveis ou lenha certificada</option>
+                    <option value="3">Energia Solar / Biogás / Fontes Renováveis</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="residuos">4. Como são tratados os resíduos e embalagens de defensivos?</label>
+                <select id="residuos">
+                    <option value="1">Descarte comum ou queima</option>
+                    <option value="2">Armazenamento temporário sem muito critério</option>
+                    <option value="3">Logística reversa e devolução de embalagens tríplice lavadas</option>
+                </select>
+            </div>
+
+            <button onclick="calcularSustentabilidade()">Calcular Diagnóstico</button>
+        </section>
+
+        <section id="resultado" class="result-box hidden">
+            <h3>Resultado do seu Diagnóstico</h3>
+            <p id="score-text"></p>
+            <div id="dica-text" class="dica"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho - Desenvolvido para um Agro Forte e Sustentável.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
